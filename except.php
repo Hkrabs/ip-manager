@@ -15,5 +15,6 @@ if ($_POST) {
         die('IP adresi gerekli.');
     }
 
+    // Add IP address to storage
     addToWhitelist($ipAddress);
 }

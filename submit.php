@@ -10,6 +10,7 @@
 
     // If data post
     if ($_POST) {
+        // Check post variables
         if (isset($_POST['ip_address'])) {
             $ipAddress =  $_POST['ip_address'];
         }
@@ -25,13 +26,15 @@
             $reason =  $_POST['reason'];
         }
 
+        // Add IP address, time to live value and reason to storage
         addToBlacklist($ipAddress, $ttl, $reason);
 
+        // Check if logging is active on config
         if ($config['logging'] == true) {
+            // Prepare log string
             $log = sprintf("Banned: %s for %s minutes. Sebep: %s", $ipAddress, $ttl, $reason);
 
+            // Log that
             error_log($log, 0);
         }
     }
-
-    thenRedirect();

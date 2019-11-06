@@ -1,6 +1,9 @@
 <?php
 
-    $db_host = '';
-    $db_name = '';
-    $db_user = '';
-    $db_password = '';
+    return array(
+        'db_type' => '', // Database type ['mysql']
+        'db_host' => '', // Database server hostname
+        'db_name' => '', // Database name
+        'db_user' => '', // Database user username
+        'db_password' => '' // Database user password
+    );

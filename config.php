@@ -1,6 +1,6 @@
 <?php
 
     return array(
-        'storage' => 'mysql',
-        'logging' => true
+        'storage' => 'mysql', // Storage type ['mysql']
+        'logging' => true // Logging action
     );
