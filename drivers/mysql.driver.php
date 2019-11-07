@@ -1,6 +1,6 @@
 <?php
 
-    // function replacements for both of MySQL and MySQLi
+    // Function replacements for both of MySQL and MySQLi
 
     /**
      * mysql_query()
