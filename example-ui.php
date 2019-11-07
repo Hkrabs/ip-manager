@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="blacklist-form">
-        <form action="submit.php" method="POST">
+        <form action="add-to-blacklist.php?redirect=<?php echo $_SERVER['REQUEST_URI']; ?>" method="POST">
             <h3>Karalisteye ekle</h3>
             <div>
                 <div>
@@ -41,7 +41,7 @@
         </form>
     </div>
     <div class="whitelist-form">
-        <form action="except.php" method="POST">
+        <form action="add-to-whitelist.php?redirect=<?php echo $_SERVER['REQUEST_URI']; ?>" method="POST">
             <h3>Beyazlisteye ekle</h3>
             <div>
                 <div>
@@ -57,12 +57,9 @@
         </form>
     </div>
     <div>
-        <h3>Karaliste</h3>
-        <div>
-            <code>
-                <?php require 'list.php' ?>
-            </code>
-        </div>
+        <p>
+            <a href="blacklist.php">Karaliste</a>
+        </p>
     </div>
 </body>
 </html>
