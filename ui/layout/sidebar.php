@@ -16,7 +16,7 @@
 									<a href="blacklist.php">Karaliste <span class="badge badge-secondary">Düz metin</span></a>
 								</li>
 								<li>
-									<a href="blacklist-json.php?by_ttl">Karaliste <span class="badge badge-success">JSON</span></a>
+									<a href="blacklist-json.php?by_ttl&except_whitelist">Karaliste <span class="badge badge-success">JSON</span></a>
 								</li>
 								<li>
 									<a href="blacklist-json.php">Karaliste <span class="badge badge-danger">Tamamı</span> <span class="badge badge-success">JSON</span></a>

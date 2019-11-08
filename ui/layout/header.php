@@ -103,7 +103,7 @@
 
 		#page #content {
 			background-color: #ffffff;
-			margin: 30px;
+			margin: 15px;
 			padding: 20px 25px;
 			box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, .3);
 			z-index: 999;

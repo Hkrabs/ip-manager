@@ -14,11 +14,16 @@
         'reason' => true,
         'created_date' => true,
         'ttl' => true,
-        'as_json' => true
+        'as_json' => true,
+        'except_whitelist' => false
     );
 
     if (isset($_GET['by_ttl'])) {
         $config['show_by_ttl'] = true;
+    }
+
+    if (isset($_GET['except_whitelist'])) {
+        $config['except_whitelist'] = true;
     }
 
     // Get blacklisted IPs as array

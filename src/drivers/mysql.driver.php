@@ -101,6 +101,19 @@
     }
 
     /**
+     * Delete from blacklist
+     */
+    function deleteFromBlacklist($itemId) {
+        global $connection;
+
+        $itemId = real_escape_string($connection, $itemId);
+
+        $sql = "DELETE FROM blacklist WHERE blacklist_id = '{$itemId}'";
+
+        return query($connection, $sql);
+    }
+
+    /**
      * List blacklisted IPs
      *
      * @return void
@@ -114,6 +127,7 @@
             'created_date' => false,
             'id' => false,
             'reason' => false,
+            'except_whitelist' => true,
             'as_json' => false
         ];
 
@@ -151,7 +165,7 @@
         }
 
         while ($row = fetch_assoc($blacklistQuery)) {
-            if (checkWhitelist($row['ip_address'])) {
+            if ($config['except_whitelist'] && checkWhitelist($row['ip_address'])) {
                 continue;
             }
 
@@ -245,6 +259,19 @@
         }
 
         return $insert;
+    }
+
+    /**
+     * Delete from whitelist
+     */
+    function deleteFromWhitelist($ipAddress) {
+        global $connection;
+
+        $ipAddress = real_escape_string($connection, $ipAddress);
+
+        $sql = "DELETE FROM whitelist WHERE ip_address = '{$ipAddress}'";
+
+        return query($connection, $sql);
     }
 
     /**

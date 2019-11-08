@@ -14,7 +14,7 @@
 	<script type="text/javascript">
 		
 		$(function() {
-			$.getJSON('blacklist-json.php?by_ttl&limit=5', function(item) {
+			$.getJSON('blacklist-json.php?by_ttl&except_whitelist&limit=5', function(item) {
 				$.each(item, function(i) {
 					$('.blacklist-preview ul')
 					.prepend('<li>' + item[i].ip_address + '</li>');
