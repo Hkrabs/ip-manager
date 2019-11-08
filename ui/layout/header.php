@@ -26,7 +26,7 @@
 
 		#sidebar {
 			font-family: 'Raleway', sans-serif;
-			background-color: #673ab7;
+			background-color: #009688;
 			min-height: 100vh;
 			padding: 0;
 		}

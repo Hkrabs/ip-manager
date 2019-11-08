@@ -13,13 +13,13 @@
 									<a href="?page=add-to-blacklist">Karalisteye Ekle</a>
 								</li>
 								<li>
-									<a href="blacklist.php">Karaliste <span class="badge badge-secondary">Düz metin</span></a>
+									<a href="blacklist.php">Karaliste <span class="badge badge-pill badge-light">Düz metin</span></a>
 								</li>
 								<li>
-									<a href="blacklist-json.php?by_ttl&except_whitelist">Karaliste <span class="badge badge-success">JSON</span></a>
+									<a href="blacklist-json.php?by_ttl&except_whitelist">Karaliste <span class="badge badge-pill badge-success">JSON</span></a>
 								</li>
 								<li>
-									<a href="blacklist-json.php">Karaliste <span class="badge badge-danger">Tamamı</span> <span class="badge badge-success">JSON</span></a>
+									<a href="blacklist-json.php">Karaliste <span class="badge badge-pill badge-danger">Tamamı</span> <span class="badge badge-pill badge-success">JSON</span></a>
 								</li>
 							</ul>
 						</li>
@@ -30,7 +30,7 @@
 									<a href="?page=add-to-whitelist">İstisnalara Ekle</a>
 								</li>
 								<li>
-									<a href="whitelist.php">İstisnalar <span class="badge badge-secondary">Düz metin</span></a>
+									<a href="whitelist.php">İstisnalar <span class="badge badge-pill badge-light">Düz metin</span></a>
 								</li>
 							</ul>
 						</li>
@@ -38,9 +38,9 @@
 				</div>
 
 				<div id="sidebar-colors">
+					<a href="?sidebar-color=009688" style="background-color: #009688;"></a>
 					<a href="?sidebar-color=673ab7" style="background-color: #673ab7;"></a>
 					<a href="?sidebar-color=f44336" style="background-color: #f44336;"></a>
-					<a href="?sidebar-color=009688" style="background-color: #009688;"></a>
 					<a href="?sidebar-color=17a2b8" style="background-color: #17a2b8;"></a>
 					<div style="clear: both;"></div>
 				</div>
