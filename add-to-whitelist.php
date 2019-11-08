@@ -1,7 +1,7 @@
 <?php
 
     // Include bootstrap file to initialization
-    require_once 'bootstrap.php';
+    require_once './src/bootstrap.php';
 
     // Set default values
     $ipAddress = '';
@@ -21,7 +21,7 @@
         $data = (array) $data;
 
         // Check post variables in JSON
-        if (isset($data['ip_address'])) {
+        if (!empty($data['ip_address'])) {
             $ipAddress =  $data['ip_address'];
         }
         else {
@@ -31,7 +31,7 @@
         $readyToCreate = true;
     }
     else if ($_POST) {
-        if (isset($_POST['ip_address'])) {
+        if (!empty($_POST['ip_address'])) {
             $ipAddress =  $_POST['ip_address'];
         }
         else {

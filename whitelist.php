@@ -7,7 +7,9 @@
     header('Content-Type: text/plain');
 
     // Get blacklisted IPs as array
-    $blacklist = getBlacklistAsPlain();
+    $whitelist = getWhitelist();
 
     // Print blacklisted IPs to screen
-    echo $blacklist;
+    for ($i = 0; $i < count($whitelist); $i++) {
+        printf("%s\r\n", $whitelist[$i]);
+    }

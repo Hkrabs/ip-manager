@@ -1,4 +1,5 @@
 <?php
+    error_reporting(E_ALL ^ E_DEPRECATED);
 
     // Set main config by its file
     $config = require('./config.php');
@@ -11,14 +12,14 @@
 
         if ($dbConfig['db_type'] == 'mysql') {
             // Include MySQL driver
-            require_once './drivers/mysql.driver.php';
+            require_once './src/drivers/mysql.driver.php';
         }
     }
 
     // If logging is active on default config file
     if ($config['logging'] == true) {
         ini_set('log_errors', 1);
-        ini_set('error_log', './error_log.txt');
+        ini_set('error_log', dirname(__DIR__) . '/error_log.txt');
     }
 
     /**
