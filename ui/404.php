@@ -3,7 +3,7 @@
 				<div id="content">
                     <h1 style="text-align: center; padding: 200px;">404</h1>
                     <div>
-                        <big>Sayfa bulunamadı.</big>
+                        <p>Sayfa bulunamadı.</p>
                     </div>
 				</div>
 			</div>	
