@@ -95,6 +95,7 @@
 			padding-top: 20px;
 			padding-bottom: 20px;
 			color: rgba(255, 255, 255, .6);
+			position: relative;
 		}
 
 		#page {
@@ -105,7 +106,7 @@
 			background-color: #ffffff;
 			margin: 15px;
 			padding: 20px 25px;
-			box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, .3);
+/*			box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, .2);*/
 			z-index: 999;
 		}
 

@@ -1,6 +1,8 @@
 			<div class="col-md-3" id="sidebar">
 				<div id="side-nav">
-					<h1 id="title">IP Manager</h1>
+					<h1 id="title">
+						IP Manager
+					</h1>
 					<ul>
 						<li>
 							<a href="index.php">Ana Sayfa</a>
