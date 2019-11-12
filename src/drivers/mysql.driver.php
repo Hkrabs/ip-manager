@@ -82,14 +82,12 @@
     function addToBlacklist($ipAddress, $ttl = -1, $reason = '') {
         global $connection;
 
-        $created = date('Y-m-d H:i:s');
-
         // Filter inputs before add to database
         $ipAddress = real_escape_string($connection, $ipAddress);
         $ttl = real_escape_string($connection, $ttl);
         $reason = real_escape_string($connection, $reason);
 
-        $sql = "INSERT INTO blacklist (ip_address, created, ttl, reason) VALUES ('{$ipAddress}', '{$created}', '{$ttl}', '{$reason}')";
+        $sql = "INSERT INTO blacklist (ip_address, created, ttl, reason) VALUES ('{$ipAddress}', NOW(), '{$ttl}', '{$reason}')";
 
         $insert = query($connection, $sql);
 
