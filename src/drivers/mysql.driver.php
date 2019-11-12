@@ -136,7 +136,7 @@
         $blacklist = array();
 
         if ($config['show_by_ttl']) {
-            $sql = "SELECT * FROM blacklist WHERE CURTIME() <= (blacklist.created + INTERVAL blacklist.ttl MINUTE) or blacklist.ttl = -1";
+            $sql = "SELECT * FROM blacklist WHERE NOW() <= (blacklist.created + INTERVAL blacklist.ttl MINUTE) or blacklist.ttl = -1";
         }
         else {
             $sql = "SELECT * FROM blacklist";
